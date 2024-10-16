@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Bookmark Of Our Own",
+    "description": "Bo3. Tracks reading progress for fics on Ao3.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "bo3-home.html",
+        "default_icon": "bo3-icon.png"
+    }
+}
