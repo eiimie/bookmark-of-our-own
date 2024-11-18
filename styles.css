@@ -4,3 +4,18 @@ body {
   width: 300px;
   height: auto;
 }
+
+.fic-item {
+  border-bottom: 1px slid #eee;
+  padding: 10px 0;
+}
+
+.fic-actions { 
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+}
