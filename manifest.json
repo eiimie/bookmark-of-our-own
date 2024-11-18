@@ -1,10 +1,26 @@
 {
     "manifest_version": 3,
     "name": "Bookmark Of Our Own",
-    "description": "Bo3. Tracks reading progress for fics on Ao3.",
     "version": "1.0",
+    "description": "Bo3. Tracks reading progress for fics on Ao3.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "https://archiveofourown.org/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://archiveofourown.org/works/*"],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ],
     "action": {
         "default_popup": "bo3-home.html",
-        "default_icon": "bo3-icon.png"
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
     }
 }
